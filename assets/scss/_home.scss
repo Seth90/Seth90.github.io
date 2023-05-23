@@ -46,14 +46,53 @@
         max-width: 35vw;
         margin-top: 20vh;
         text-align: left;
-        background: #292929;
+
+        &__poster {
+            display: none;
+
+            img {
+                width: 200px;
+                height: 200px;
+            }
+
+            @media screen and (max-width: 767px) {
+                display: block;
+            }
+        }
+
+        &__title {
+            font-weight: 800;
+            //font-size: 44px;
+            font-size: calc((1vh + 1vw) * 2.5);
+            line-height: 2em;
+            /* identical to box height */
+            color: var(--active);
+        }
+
+        &__title2 {
+            font-weight: 700;
+            //font-size: 30px;
+            font-size: calc((1vh + 1vw) * 1.3);
+            //line-height: 1.5em;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            margin-bottom: 10px;
+        }
+
+        &__desc {
+            font-weight: 500;
+            //font-size: 20px;
+            font-size: calc((1vh + 1vw) * 1.2);
+            //line-height: 30px;
+            color: #dedede;
+            margin-bottom: 40px;
+        }
 
         &-buttons {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            gap: 20px;
+            gap: 10px;
             margin-bottom: 40px;
 
             a {
@@ -69,7 +108,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                gap: 20px;
+                gap: 5px;
                 font-size: 20px;
                 line-height: 30px;
                 font-weight: bold;
@@ -89,7 +128,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                padding: 12px 30px 12px 30px;
+                padding: 12px 15px 12px 15px;
                 background: var(--active);
                 border-radius: 10px;
                 color: var(--invert-font-color);
@@ -104,33 +143,6 @@
                     filter: brightness(90%);
                 }
             }
-        }
-
-        &__title {
-            font-weight: 800;
-            //font-size: 44px;
-            font-size: calc((1vh + 1vw) * 2.5);
-            //line-height: 66px;
-            /* identical to box height */
-            color: var(--active);
-        }
-
-        &__title2 {
-            font-weight: 700;
-            //font-size: 30px;
-            font-size: calc((1vh + 1vw) * 1.7);
-            line-height: 1.5em;
-            border: 1px solid rgba(255, 255, 255, 0.14);
-            margin-bottom: 10px;
-        }
-
-        &__desc {
-            font-weight: 500;
-            //font-size: 20px;
-            font-size: calc((1vh + 1vw) * 1.3);
-            //line-height: 30px;
-            color: #dedede;
-            margin-bottom: 40px;
         }
 
         &__social {
@@ -150,13 +162,15 @@
                 height: 30px;
             }
         }
+
         @media screen and (max-width: 1024px) {
-            max-width: 45vw;
+            //max-width: 45vw;
+            background: #292929;
         }
 
         @media screen and (max-width: 767px) {
             max-width: 100vw;
-            margin-top: 13vh;
+            margin-top: 5vh;
             margin-left: auto;
             margin-right: auto;
             padding: 20px;
@@ -201,6 +215,35 @@
             transform: skew(30deg);
             z-index: -1;
         }
+    }
+
+    &-poster {
+        position: absolute;
+        //left: 50vw;
+        right: calc(1vw / 16);
+        top: 18vh;
+        z-index: -2;
+
+        img {
+            display: block;
+            width: 80vh;
+            height: 80vh;
+        }
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+
+        @media screen and (max-width: 1023px) {
+            top:26vh;
+            right: -10vw;
+            img {
+                display: block;
+                width: 70vh;
+                height: 70vh;
+            }
+        }
+
     }
 
     &-circle {
