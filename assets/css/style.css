@@ -329,4 +329,16 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+
+.active-font-color {
+  color: var(--active);
+}
+
+.main-font-color {
+  color: var(--main-font-color);
+}
+
+.invert-font-color {
+  color: var(--invert-font-color);
 }/*# sourceMappingURL=style.css.map */
