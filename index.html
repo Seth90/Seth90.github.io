@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrei Goebachev portfolio</title>
+    <title>Andrei Gorbachev portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="js/app.js" defer></script>
 </head>
@@ -13,16 +13,22 @@
 <body>
     <div class="container">
         <section class="home">
-            <nav class="top-menu">
-                <ul class="top-menu__list">
-                    <li class="top-menu__item"><a href="#about">About</a></li>
-                    <li class="top-menu__item"><a href="#study">Study</a></li>
-                    <li class="top-menu__item"><a href="#experience">Experience</a></li>
-                    <li class="top-menu__item"><a href="#projects">Projects</a></li>
-                    <li class="top-menu__item"><a href="#contacts">Contacts</a></li>
-                </ul>
-            </nav>
-
+            <div class="top-menu">
+                <div class="home-mobile-menu" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <nav>
+                    <ul class="top-menu__list">
+                        <li class="top-menu__item"><a href="#about">Обо мне</a></li>
+                        <li class="top-menu__item"><a href="#study">Учеба</a></li>
+                        <li class="top-menu__item"><a href="#experience">Карьера</a></li>
+                        <li class="top-menu__item"><a href="#projects">Проекты</a></li>
+                        <li class="top-menu__item"><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="home-circle">
                 <div class="home-circle-one"></div>
                 <div class="home-circle-two"></div>
@@ -31,22 +37,60 @@
                 <div class="home-text">
                     <div class="home-text-container">
                         <div class="home-text__title">
-                            MISTER МИСТЕР
+                            МИСТЕР СМИТ
                         </div>
                         <div class="home-text__title2">
                             Front-end Developer & QA Engineer
                         </div>
                         <div class="home-text__desc">
-                            Front-end developer focused on creating Web and Mobile applications. I really like different projects that solve real problems.
+                            Front-end разработчик, занимающийся созданием web- и мобильных приложений. Опыта не много,
+                            но постоянное саморазвитие помогает ежедневно получать новые знания и навыки.
+                        </div>
+                        <div class="home-text-buttons">
+                            <div class="home-text-buttons__cv">
+                                <img src="/assets/imgs/cloud_down.svg" alt="cloud">
+                                <div><a href="/assets/files/cv.pdf">Скачать CV</a></div>
+                            </div>
+                            <div>
+                                <a href="/#about">
+                                    <div class="home-text-buttons__portfolio">
+                                        <img src="/assets/imgs/circle_down.svg" alt="cloud">
+                                        <div>Портфолио</div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                         <div class="home-text__social">
-                            SOCIAL
+                            <a href=""><img src="/assets/imgs/socials/Github_black.svg" alt="github"></a>
+                            <a href=""><img src="/assets/imgs/socials/Telegram_black.svg" alt="telegram"></a>
+                            <a href=""><img src="/assets/imgs/socials/Mail_ru_black.svg" alt="mailru"></a>
+                            <a href=""><img src="/assets/imgs/socials/WhatsApp_black.svg" alt="whatsapp"></a>
+                            <a href=""><img src="/assets/imgs/socials/Viber_black.svg" alt="viber"></a>
+                            <a href=""><img src="/assets/imgs/socials/VK_black.svg" alt="vk"></a>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="home-bottom"></div>
+        </section>
+        <section class="about flex-container">
+            <div class="about-shadow-text">ABOUT</div>
+            <div class="about-shadow-svg"><img src="/assets/imgs/Group 34.svg"></div>
+            <div class="flex-container about-text-container">
+                <div class="about-title">
+                    ОБО МНЕ
+                </div>
+
+                <div class="about-text">
+                    I'm Thiago Leão, I'm 20 years old and I live in São Vicente -SP.
+                    Front-end developer and UI Designer, I'm passionate about interfaces, from their creation to
+                    development. I like to learn more and more about the area, challenges that take me out of my comfort
+                    zone are the best.
+
+                    I have prototyped and developed Landing Pages, Sites, E-commerces, E-mails Marketing, Apps and
+                    Programs.
+                </div>
+            </div>
         </section>
     </div>
 </body>

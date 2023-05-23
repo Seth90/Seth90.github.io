@@ -1,9 +1,17 @@
+@import 'mx';
 @import 'home';
+@import 'about';
+
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
     --main-font-color: white;
+    --invert-font-color: black;
     --active: #13FF00;
 }
+
+
 
 * {
     margin: 0;
@@ -13,12 +21,18 @@
 
 body {
     background: #000;
-    font-family: 'Poppins';
+    font-family: 'Play';
     font-style: normal;
     overflow-x: hidden;
 }
 
 .container {
     //max-width: 1440px;
-    //margin: 0 auto 0 auto;
+    //margin: auto;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
 }

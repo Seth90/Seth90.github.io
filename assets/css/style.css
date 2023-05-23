@@ -1,15 +1,36 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
 .home {
-  margin: 0 auto 0 auto;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   background: #3F3F3F;
+  z-index: 0;
+}
+.home-mobile-menu {
+  display: none;
+}
+.home-mobile-menu .bar1, .home-mobile-menu .bar2, .home-mobile-menu .bar3 {
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.home-mobile-menu .change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.home-mobile-menu .change .bar2 {
+  opacity: 0;
+}
+.home-mobile-menu .change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 .home-text {
   position: absolute;
   color: white;
-  z-index: 6;
+  z-index: 0;
   padding: 10px;
   margin-left: 30px;
   display: flex;
@@ -17,7 +38,7 @@
   justify-content: center;
   align-items: center;
   max-width: 35vw;
-  margin-top: 30vh;
+  margin-top: 20vh;
   text-align: center;
 }
 @media screen and (max-width: 1024px) {
@@ -25,46 +46,112 @@
     max-width: 45vw;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .home-text {
     max-width: 100vw;
+    margin-top: 13vh;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
   }
+}
+.home-text-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.home-text-buttons a {
+  text-decoration: none;
+}
+.home-text-buttons img {
+  display: block;
+}
+.home-text-buttons__cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.home-text-buttons__cv a {
+  color: var(--main-font-color);
+}
+.home-text-buttons__cv a:hover {
+  color: var(--active);
+  text-decoration: underline;
+}
+.home-text-buttons__portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 30px 12px 30px;
+  background: var(--active);
+  border-radius: 10px;
+  color: var(--invert-font-color);
+  font-weight: bold;
+}
+.home-text-buttons__portfolio img {
+  margin-right: 10px;
+}
+.home-text-buttons__portfolio:hover {
+  filter: brightness(90%);
 }
 .home-text__title {
   font-weight: 800;
-  font-size: 44px;
-  line-height: 66px;
+  font-size: calc((1vh + 1vw) * 2.5);
   /* identical to box height */
-  color: #13FF00;
+  color: var(--active);
 }
 .home-text__title2 {
   font-weight: 700;
-  font-size: 30px;
+  font-size: calc((1vh + 1vw) * 1.7);
   line-height: 1.5em;
   border: 1px solid rgba(255, 255, 255, 0.14);
   margin-bottom: 10px;
 }
 .home-text__desc {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: calc((1vh + 1vw) * 1);
   color: #8F8F8F;
+  margin-bottom: 40px;
+}
+.home-text__social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+.home-text__social a:hover {
+  filter: brightness(80%);
+}
+.home-text__social img {
+  filter: invert(100%);
+  width: 30px;
+  height: 30px;
 }
 .home-bottom {
   position: absolute;
   width: 100vw;
   height: 10vh;
-  background: #000;
+  background: #292929;
   margin-top: -5vmin;
   z-index: 2;
 }
 .home-trapezoid {
+  position: relative;
   display: inline-block;
   overflow: hidden;
-  width: 65vw;
+  width: 100vw;
   height: 100vh;
   color: #fff;
-  margin-top: -10vmin;
+  margin-top: -12vmin;
 }
 .home-trapezoid:after {
   content: "";
@@ -81,7 +168,7 @@
   -webkit-transform: skew(30deg);
   -ms-transform: skew(30deg);
   transform: skew(30deg);
-  z-index: 0;
+  z-index: -1;
 }
 .home-circle {
   position: absolute;
@@ -92,9 +179,9 @@
   width: 80vmin;
   height: 80vmin;
   margin-top: 50px;
-  z-index: 0;
+  z-index: -2;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .home-circle {
     display: none;
   }
@@ -119,8 +206,6 @@
 .top-menu {
   position: relative;
   color: var(--main-font-color);
-  font-family: "Poppins";
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
@@ -135,11 +220,12 @@
   position: relative;
   transition: 0.1s;
 }
-.top-menu a::before {
+.top-menu a:hover::before {
   content: "•";
   position: absolute;
   left: 50%;
   top: -50%;
+  color: var(--active);
 }
 .top-menu a:hover {
   color: var(--active);
@@ -153,8 +239,75 @@
   list-style-type: none;
 }
 
+@media screen and (max-width: 768px) {
+  .home-mobile-menu {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .top-menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav {
+    display: none;
+  }
+}
+.about {
+  position: relative;
+  background: #000;
+  color: var(--main-font-color);
+  padding-top: 20px;
+  padding-bottom: 30vh;
+}
+.about-text-container {
+  max-width: 70vw;
+  min-height: 40vh;
+}
+.about-shadow {
+  z-index: 1;
+}
+.about-shadow-text {
+  position: absolute;
+  font-weight: 700;
+  font-size: 200px;
+  color: #272727;
+  opacity: 0.3;
+  right: 0;
+}
+.about-shadow-svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.about-title {
+  font-weight: 700;
+  font-size: calc((1vh + 1vw) * 2.5);
+  line-height: 75px;
+  margin-bottom: 50px;
+  z-index: 2;
+}
+.about-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 5px;
+  background: var(--active);
+  border-radius: 50px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+.about-text {
+  font-weight: 500;
+  font-size: calc((1vh + 1vw) * 1.3);
+  line-height: calc((1vh + 1vw) * 2);
+  text-align: center;
+  z-index: 2;
+}
+
 :root {
   --main-font-color: white;
+  --invert-font-color: black;
   --active: #13FF00;
 }
 
@@ -166,7 +319,14 @@
 
 body {
   background: #000;
-  font-family: "Poppins";
+  font-family: "Play";
   font-style: normal;
   overflow-x: hidden;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
