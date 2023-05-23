@@ -9,7 +9,9 @@
 .home-mobile-menu {
   display: none;
 }
-.home-mobile-menu .bar1, .home-mobile-menu .bar2, .home-mobile-menu .bar3 {
+.home-mobile-menu .bar1,
+.home-mobile-menu .bar2,
+.home-mobile-menu .bar3 {
   width: 30px;
   height: 3px;
   background-color: #ffffff;
@@ -32,36 +34,22 @@
   color: white;
   z-index: 0;
   padding: 10px;
-  margin-left: 30px;
+  margin-left: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   max-width: 35vw;
   margin-top: 20vh;
-  text-align: center;
-}
-@media screen and (max-width: 1024px) {
-  .home-text {
-    max-width: 45vw;
-  }
-}
-@media screen and (max-width: 767px) {
-  .home-text {
-    max-width: 100vw;
-    margin-top: 13vh;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-  }
+  text-align: left;
+  background: #292929;
 }
 .home-text-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   margin-bottom: 40px;
 }
 .home-text-buttons a {
@@ -118,7 +106,7 @@
 .home-text__desc {
   font-weight: 500;
   font-size: calc((1vh + 1vw) * 1.3);
-  color: #8F8F8F;
+  color: #dedede;
   margin-bottom: 40px;
 }
 .home-text__social {
@@ -135,6 +123,23 @@
   filter: invert(100%);
   width: 30px;
   height: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .home-text {
+    max-width: 45vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .home-text {
+    max-width: 100vw;
+    margin-top: 13vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    left: 0;
+    right: 0;
+    background: transparent;
+  }
 }
 .home-bottom {
   position: absolute;
@@ -256,12 +261,13 @@
   position: relative;
   background: #000;
   color: var(--main-font-color);
-  padding-top: 20px;
+  padding-top: 5vh;
   padding-bottom: 30vh;
 }
 .about-text-container {
   max-width: 70vw;
   min-height: 40vh;
+  max-height: 100vh;
 }
 .about-shadow {
   z-index: 1;
@@ -281,7 +287,7 @@
 }
 .about-title {
   font-weight: 700;
-  font-size: calc((1vh + 1vw) * 2.5);
+  font-size: calc((1vh + 1vw) * 2);
   line-height: 75px;
   margin-bottom: 50px;
   z-index: 2;
@@ -289,7 +295,7 @@
 .about-title::after {
   content: "";
   display: block;
-  width: 60px;
+  width: 8vw;
   height: 5px;
   background: var(--active);
   border-radius: 50px;
@@ -298,8 +304,9 @@
   margin-bottom: 35px;
 }
 .about-text {
+  color: var(--darken-font-color);
   font-weight: 500;
-  font-size: calc((1vh + 1vw) * 1.3);
+  font-size: calc((1vh + 1vw) * 1.2);
   line-height: calc((1vh + 1vw) * 2);
   text-align: center;
   z-index: 2;
@@ -307,6 +314,7 @@
 
 :root {
   --main-font-color: white;
+  --darken-font-color: #dedede;
   --invert-font-color: black;
   --active: #13FF00;
 }
