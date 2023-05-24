@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrei Gorbachev portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/app.js" defer></script>
+
 </head>
 
 <body>
@@ -90,8 +93,9 @@
 
                 <div class="about-text">
                     <p>
-                        Меня зовут <span class="active-font-color">Мистер Смит</span>, мне 
-                        <span class="active-font-color" id="age">33</span> года. Я живу в городе Иваново, Россия. Есть высшее
+                        Меня зовут <span class="active-font-color">Мистер Смит</span>, мне
+                        <span class="active-font-color" id="age">33</span> года. Я живу в городе Иваново, Россия. Есть
+                        высшее
                         образование (ИГЭУ),
                         женат, есть ребенок.
                         В настоящее время работаю QA инженером.
@@ -132,7 +136,7 @@
                                 <div class="timeline-content">
                                     <h3 class="timeline-title">Лицей №22</h3>
                                     <p>Класс углубленного изучения математики</p>
-                                    <p>1996 - 2017</p>
+                                    <p>1996 - 2007</p>
                                 </div>
                             </li>
                             <li class="timeline-item">
@@ -141,9 +145,10 @@
                                 </div>
                                 <div class="timeline-marker"></div>
                                 <div class="timeline-content">
-                                    <h3 class="timeline-title">Ивановский государственный энергетический университет</h3>
+                                    <h3 class="timeline-title">Ивановский государственный энергетический университет
+                                    </h3>
                                     <p>Факультет Информатики и Вычислительной техники</p>
-                                    <p>Специализация: системной программирование</p>
+                                    <p>Специализация: системное программирование</p>
                                     <p>2009 - 2014</p>
                                 </div>
                             </li>
@@ -161,7 +166,8 @@
                                 <div class="timeline-marker"></div>
                                 <div class="timeline-content">
                                     <h3 class="timeline-title">Ивановский государственный университет</h3>
-                                    <p>Техническая защита информации. Способы и средства защиты информации от несанкционированного доступа.</p>
+                                    <p>Техническая защита информации. Способы и средства защиты информации от
+                                        несанкционированного доступа.</p>
                                     <h4><i>Защита информации • Информационная безопасность</i></h4>
                                 </div>
                             </li>
@@ -183,7 +189,8 @@
                                 <div class="timeline-marker"></div>
                                 <div class="timeline-content">
                                     <h3 class="timeline-title">Ивановский государственный университет</h3>
-                                    <p>Английский язык - уровень владения по результатам итоговой аттестации Upper-Intermediate (B2)</p>
+                                    <p>Английский язык - уровень владения по результатам итоговой аттестации
+                                        Upper-Intermediate (B2)</p>
                                     <h4><i>Английский язык</i></h4>
                                 </div>
                             </li>
@@ -198,11 +205,170 @@
                                     <h4><i>JavaScript • CSS • HTML • Веб-разработка</i></h4>
                                 </div>
                             </li>
+                            <li class="timeline-item">
+                                <div class="timeline-info">
+                                    <span>2023</span>
+                                </div>
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-title">Stepik</h3>
+                                    <p>Интерактивный тренажер по SQL</p>
+                                    <h4><i>Базы данных • SQL</i></h4>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <div class="timeline-info">
+                                    <span>2023</span>
+                                </div>
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-title">Самообучение</h3>
+                                    <p>Каждый день стараюсь узнать что-то новое :)</p>
+                                    <h4><i>Веб-разработка • Тестирование • Весь мир</i></h4>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="experience" id="experience">
+            <div class="about-shadow-text">EXPERIENCE</div>
+            <div class="about-shadow-svg"><img src="/assets/imgs/Group 34.svg"></div>
+            <div class="flex-container">
+                <div class="section-header">ОПЫТ РАБОТЫ</div>
+                <div class="container-fluid">
+                    <div class="row example-centered">
+                        <div class="experience-main">
+                            <ul class="timeline timeline-centered">
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span>2014 по настроящее время</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <h3 class="timeline-title">ООО СПЕЦЛАБ</h3>
+                                        <p>QA Engineer</p>
+                                        <p class="experience-main__desc">Все виды ручного тестирования программного
+                                            обеспечения.</p>
+                                        <p>&nbsp;</p>
+                                        <p>Составление тестовой, технической, справочной документации.
+                                            Заведение багов и контроль жизненного цикла в баг-трекере <span
+                                                class="active-font-color">Redmine</span>.</p>
+                                        <p>&nbsp;</p>
+                                        <p>Тестирование <span class="active-font-color">web-приложений</span>, <span
+                                                class="active-font-color">REST API сервисов</span> (в т.ч IP видеокамер)
+                                            - ручное, а также с использованием <span class="active-font-color">Selenium
+                                                + Python</span>, <span class="active-font-color">Postman</span>, <span
+                                                class="active-font-color">Fiddler</span>, <span
+                                                class="active-font-color">Wireshark</span>.
+                                            Тестирование интеграции стороннего ПО и оборудования в основной продукт.</p>
+                                        <p>&nbsp;</p>
+                                        <p>Поиск и обработка данных для обучения нейросетей, написание программ для
+                                            генерации данных (в т.ч. c исп. Unity), парсинг сайтов для сбора и
+                                            автоматической разметки изображений определенных объектов (с исп. <span
+                                                class="active-font-color">selenuim + opencv + python</span>). Обучение
+                                            нейросетей для поиска различных объектов на кадрах с видеокамер.</p>
+                                        <p>&nbsp;</p>
+                                        <p>Написание небольших программ для внутреннего использования (<span
+                                                class="active-font-color">python</span>, <span
+                                                class="active-font-color">c#</span>, <span class="active-font-color">JS
+                                                (node.js)</span>).</p>
+                                        <p>&nbsp;</p>
+                                        <p>Сборка, настройка ПК. Монтаж элементов системы видеонаблюдения.</p>
+                                    </div>
+                                </li>
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span>2008 по настроящее время</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <h3 class="timeline-title">Индивидуальное предпринимательство / частная практика
+                                            / фриланс</h3>
+                                        <p>Инженер</p>
+                                        <p class="experience-main__desc">Работа в сфере IT поддержки по договору
+                                            оказания услуг, обслуживание клиентов, как юридических, так и физических
+                                            лиц, оперативное решение вопросов, связанных с ЛВС, консультирование и
+                                            восстановление работы Интернета (VPN соединения), комплексное обслуживание
+                                            компьютеров (диагностика, настройка и комплексное обслуживание всех
+                                            устройств персональных компьютеров, установка и сопровождение ПО,
+                                            восстановление данных, защита компьютеров от вирусов, атак и взломов,
+                                            контроль над расходами Интернет – траффика)</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="about-shadow-text">PROJECTS</div>
+            <div class="about-shadow-svg"><img src="/assets/imgs/Group 34.svg"></div>
+            <div class="flex-container">
+                <div class="section-header">ПРОЕКТЫ</div>
+                <div class="projects-main">
+                    <div class="swiper projects-slider" ">
+                        <!-- Additional required wrapper -->
+                        <div class=" swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="projects-slider-slide">
+                                <div class="projects-main__item">
+                                    <div class="projects-slider-slide-bg">
+                                        <div>
+                                            <img src="/assets/imgs/1.png" alt="1">
+                                        </div>
+                                        <div class="projects-slider-slide-info">
+                                            <div class="projects-slider-slide-info__title">Сайт порфолио</div>
+                                            <div class="projects-slider-slide-info__desc">Описание</div>
+                                            <div class="projects-slider-slide-info__icons">ICONS</div>
+                                            <div class="projects-slider-slide-info__buttons">
+                                                <div><a href="">Исходный код -></a></div>
+                                                <div><a href="">Просмотр</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="projects-main__item">
+                                    <img src="/assets/imgs/socials/Github_black.svg" alt="">
+                                </div>
+                                <div class="projects-main__item">
+                                    <img src="/assets/imgs/socials/Github_black.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide projects-main__item">Slide 2</div>
+                        <div class="swiper-slide projects-main__item">Slide 3</div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <!-- <div class="projects-main-flex">
+                        <div class="projects-main__item"><img src="/assets/imgs/socials/Github_black.svg" alt=""></div>
+                        <div class="projects-main__item"><img src="/assets/imgs/socials/Github_black.svg" alt=""></div>
+                        <div class="projects-main__item"><img src="/assets/imgs/socials/Github_black.svg" alt=""></div>
+                        <div class="projects-main__item"><img src="/assets/imgs/socials/Github_black.svg" alt=""></div>
+                        <div class="projects-main__item"><img src="/assets/imgs/socials/Github_black.svg" alt=""></div>
+                        <div class="projects-main__item"><img src="/assets/imgs/socials/Github_black.svg" alt=""></div>
+                        <div class="projects-main__item"><img src="/assets/imgs/socials/Github_black.svg" alt=""></div>
+                        <div class="projects-main__item"><img src="/assets/imgs/socials/Github_black.svg" alt=""></div>
+                        <div class="projects-main__item"><img src="/assets/imgs/socials/Github_black.svg" alt=""></div>
+                    </div> -->
+            </div>
+    </div>
+    </section>
 
     </div>
 </body>

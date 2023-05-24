@@ -1,0 +1,12 @@
+.experience {
+    min-height: 100vh;
+    position: relative;
+    padding: 30px;
+
+    &-main {
+        margin-top: 40px;
+        &__desc {
+            margin-top: 10px;
+        }
+    }
+}

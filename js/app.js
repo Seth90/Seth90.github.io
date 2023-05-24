@@ -34,10 +34,10 @@ var Visible = function (target) {
         top: window.pageYOffset,
         bottom: window.pageYOffset + document.documentElement.clientHeight
     };
-    console.log(targetPosition.bottom, windowPosition.top)
+    //console.log(targetPosition.bottom, windowPosition.top)
     if (targetPosition.bottom > windowPosition.top &&
         targetPosition.top < windowPosition.bottom) {
-        console.log('visible2');
+        ///console.log('visible2');
         if (!done) {
             AgeCounter(element); done = true;
         }
@@ -52,3 +52,25 @@ window.addEventListener('scroll', function () {
 });
 
 Visible(element);
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+  });

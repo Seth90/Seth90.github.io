@@ -2,7 +2,7 @@
     //height: 100vh;
     //margin-top: -10vh;
     min-height: 100vh;
-    max-height: 100vh;
+    //max-height: 100vh;
     position: relative;
     background: #000;
     color: var(--main-font-color);
@@ -10,7 +10,7 @@
     padding-bottom: 30vh;
 
     &-text-container {
-        max-width: 70vw;
+        max-width: 60vw;
 
     }
 
@@ -38,9 +38,10 @@
         margin-top: 50px;
         color: var(--darken-font-color);
         font-weight: 500;
-        //font-size: 30px;
-        font-size: calc((1vh + 1vw) * 1.2);
-        line-height: calc((1vh + 1vw) * 2);
+        font-size: 20px;
+        line-height: 1.5em;
+        //font-size: calc((1vh + 1vw) * 1.2);
+        //line-height: calc((1vh + 1vw) * 2);
         text-align: center;
         z-index: 2;
     }

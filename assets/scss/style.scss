@@ -2,6 +2,8 @@
 @import 'home';
 @import 'about';
 @import 'study';
+@import 'experience';
+@import 'projects';
 
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -12,6 +14,7 @@
     --darken-font-color: #dedede;
     --invert-font-color: black;
     --active: #13FF00;
+    --swiper-theme-color: #13FF00;
 }
 
 
@@ -24,6 +27,7 @@
 }
 
 body {
+    color: var(--main-font-color);
     background: #000;
     //font-family: 'Play';
     font-family: 'Roboto Condensed', sans-serif;

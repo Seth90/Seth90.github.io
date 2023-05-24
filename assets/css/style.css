@@ -298,7 +298,6 @@
 }
 .about {
   min-height: 100vh;
-  max-height: 100vh;
   position: relative;
   background: #000;
   color: var(--main-font-color);
@@ -306,7 +305,7 @@
   padding-bottom: 30vh;
 }
 .about-text-container {
-  max-width: 70vw;
+  max-width: 60vw;
 }
 .about-shadow {
   z-index: 1;
@@ -328,8 +327,8 @@
   margin-top: 50px;
   color: var(--darken-font-color);
   font-weight: 500;
-  font-size: calc((1vh + 1vw) * 1.2);
-  line-height: calc((1vh + 1vw) * 2);
+  font-size: 20px;
+  line-height: 1.5em;
   text-align: center;
   z-index: 2;
 }
@@ -545,11 +544,99 @@ a:hover {
   }
 }
 
+.experience {
+  min-height: 100vh;
+  position: relative;
+  padding: 30px;
+}
+.experience-main {
+  margin-top: 40px;
+}
+.experience-main__desc {
+  margin-top: 10px;
+}
+
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+  display: inline-block;
+  border-radius: var(--swiper-pagination-bullet-border-radius, 100%);
+  border: 2px solid var(--active);
+}
+
+.projects {
+  min-height: 100vh;
+  position: relative;
+  padding: 30px;
+  background: #292929;
+}
+.projects-slider {
+  max-width: 80vw;
+  margin-top: 40px;
+}
+.projects-slider-slide {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.projects-slider-slide-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+  padding: 10px;
+}
+.projects-slider-slide-bg img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+.projects-slider-slide-info {
+  width: 100%;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+}
+.projects-slider-slide-info__title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.projects-slider-slide-info__desc {
+  font-size: 1.1em;
+}
+.projects-slider-slide-info__buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.projects-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects-main-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.projects-main__item {
+  margin: auto;
+  width: 33%;
+  height: 50vh;
+  border: 1px solid red;
+}
+
 :root {
   --main-font-color: white;
   --darken-font-color: #dedede;
   --invert-font-color: black;
   --active: #13FF00;
+  --swiper-theme-color: #13FF00;
 }
 
 * {
@@ -559,6 +646,7 @@ a:hover {
 }
 
 body {
+  color: var(--main-font-color);
   background: #000;
   font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
