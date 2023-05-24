@@ -1,8 +1,10 @@
 @import 'mx';
 @import 'home';
 @import 'about';
+@import 'study';
 
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 //@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
@@ -14,6 +16,7 @@
 
 
 
+
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +25,8 @@
 
 body {
     background: #000;
-    font-family: 'Play';
+    //font-family: 'Play';
+    font-family: 'Roboto Condensed', sans-serif;
     font-style: normal;
     overflow-x: hidden;
 }
@@ -46,4 +50,17 @@ body {
 }
 .invert-font-color {
     color: var(--invert-font-color);
+}
+
+.section-header {
+    font-weight: 700;
+    color: var(--main-font-color);
+    font-size: calc((1vh + 1vw) * 2.0);
+    line-height: 55px;
+    //margin-bottom: 50px;
+    z-index: 2;
+
+    &::after {
+        @include line;
+    }
 }

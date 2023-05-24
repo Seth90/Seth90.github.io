@@ -90,9 +90,9 @@
         &-buttons {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
-            gap: 10px;
+            gap: 30px;
             margin-bottom: 40px;
 
             a {
@@ -147,7 +147,7 @@
 
         &__social {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             flex-wrap: wrap;
             gap: 15px;
             align-items: center;

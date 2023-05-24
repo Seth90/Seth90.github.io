@@ -13,7 +13,7 @@ for (let anchor of anchors) {
 
 let AgeCounter = (el) => {
     //console.log('agecounter');
-    let counts = setInterval(updated, 50);
+    let counts = setInterval(updated, 35);
     let upto = 0;
     function updated() {
         el.innerHTML = upto < 9 ? '0' + ++upto : ++upto;
