@@ -226,7 +226,7 @@ p.by a {
 .home-text {
   position: absolute;
   color: white;
-  z-index: 0;
+  z-index: 3;
   padding: 10px;
   margin-left: 40px;
   display: flex;
@@ -451,7 +451,7 @@ p.by a {
   line-height: 30px;
   gap: 10px;
   padding-top: 5vh;
-  z-index: 2;
+  z-index: 9;
 }
 .top-menu a {
   color: var(--main-font-color);
@@ -491,6 +491,36 @@ p.by a {
   nav {
     display: none;
   }
+}
+.hidden {
+  display: none;
+}
+
+.mobile {
+  background: #dfdfdf;
+  color: var(--invert-font-color);
+  position: absolute;
+  width: 200px;
+  max-height: 350px;
+  padding: 20px;
+  right: 20px;
+  top: 60px;
+  font-size: 15px;
+  border-radius: 10px 0 0 10px;
+}
+.mobile > ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+.mobile > ul li {
+  width: 100%;
+  padding: 5px;
+}
+.mobile > ul li a {
+  color: var(--invert-font-color);
 }
 .about {
   min-height: 100vh;

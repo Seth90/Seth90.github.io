@@ -34,10 +34,19 @@
         </header>
         <section class="home">
             <div class="top-menu">
-                <div class="home-mobile-menu" onclick="myFunction(this)">
+                <div class="home-mobile-menu">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
+                </div>
+                <div class="mobile hidden">
+                    <ul class="mobile-menu">
+                        <li class="top-menu__item"><a href="#about">Обо мне</a></li>
+                        <li class="top-menu__item"><a href="#study">Образование</a></li>
+                        <li class="top-menu__item"><a href="#experience">Опыт работы</a></li>
+                        <li class="top-menu__item"><a href="#projects">Проекты</a></li>
+                        <li class="top-menu__item"><a href="#contacts">Контакты</a></li>
+                    </ul>
                 </div>
                 <nav>
                     <ul class="top-menu__list">
@@ -118,16 +127,11 @@
 
                 <div class="about-text">
                     <p>
-                        Меня зовут <span class="active-font-color">Мистер Смит</span>, мне
-                        <span class="active-font-color" id="age">33</span> года. Я живу в городе Иваново, Россия. Есть
-                        высшее
-                        образование (ИГЭУ),
-                        женат, есть ребенок.
-                        В настоящее время работаю QA инженером.
+                        Меня зовут <span class="active-font-color">Андрей Горбачев</span>, мне <span class="active-font-color" id="age">33</span> года. Я живу в городе Иваново, Россия. Есть высшее образование (ИГЭУ),женат, есть ребенок. В настоящее время работаю QA инженером.
                     </p>
                     <p>&nbsp;</p>
                     <p>В процессе тестирования web-приложений заинтересовался
-                        web-разработкой. На данный момент активно
+                        <span class="active-font-color">web-разработкой</span>. На данный момент активно
                         осваиваю <span class="active-font-color">front-end</span> (и немного <span
                             class="active-font-color">back-end</span> на node.js).
                         Ищу компанию, в которой смогу постоянно развиваться, чтобы в дальнейшем реализовать себя как

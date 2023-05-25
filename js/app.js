@@ -1,5 +1,4 @@
 const anchors = document.querySelectorAll('a[href*="#"]')
-
 for (let anchor of anchors) {
     anchor.addEventListener('click', function (e) {
         e.preventDefault()
@@ -8,8 +7,29 @@ for (let anchor of anchors) {
             behavior: 'smooth',
             block: 'start'
         })
+        
     })
 }
+
+let m_menu = document.querySelector('.home-mobile-menu');
+let mobile = document.querySelector('.mobile');
+
+mobile.addEventListener('click', () => {
+    mobile.classList.toggle('hidden');
+})
+
+m_menu.addEventListener('click', function(e) {
+    console.log('m_menu');
+    mobile.classList.toggle('hidden');
+    
+
+})
+
+// let ShowMobileMenu = () => {
+//     console.log('m menu');
+//     let m_menu = document.querySelector('.mobile');
+//     m_menu.classList.toggle('hidden');
+// }
 
 let AgeCounter = (el) => {
     //console.log('agecounter');
