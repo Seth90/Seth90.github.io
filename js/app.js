@@ -16,14 +16,14 @@ let mobile = document.querySelector('.mobile');
 let home = document.querySelector('.home');
 
 home.addEventListener('click', function (e) {
-    e.stopPropagation();
+    //e.stopPropagation();
     if (!mobile.classList.contains('hidden')) {
         mobile.classList.add('hidden');
     }
 })
 
 mobile.addEventListener('click', (e) => {
-    e.stopPropagation();
+    //e.stopPropagation();
     mobile.classList.toggle('hidden');
 })
 
