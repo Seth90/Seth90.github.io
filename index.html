@@ -15,6 +15,15 @@
 
 <body>
     <div class="container">
+        <header class="header">
+            <div class="header-color">
+                <div class="header-color__color green" onclick="SetColor('green')"></div>
+                <div class="header-color__color red" onclick="SetColor('red')"></div>
+                <div class="header-color__color orange" onclick="SetColor('orange')"></div>
+                <div class="header-color__color blue" onclick="SetColor('blue')"></div>
+                <div class="header-color__color purple" onclick="SetColor('purple')"></div>
+            </div>
+        </header>
         <section class="home">
             <div class="top-menu">
                 <div class="home-mobile-menu" onclick="myFunction(this)">
@@ -46,7 +55,7 @@
                             <img src="/assets/imgs/startup-img-1.png" alt="">
                         </div> -->
                         <div class="home-text__title">
-                            МИСТЕР СМИТ
+                            АНДРЕЙ ГОРБАЧЕВ
                         </div>
                         <div class="home-text__title2">
                             Front-end Developer & QA Engineer
@@ -58,7 +67,7 @@
                         <div class="home-text-buttons">
                             <div class="home-text-buttons__cv">
                                 <img src="/assets/imgs/cloud_down.svg" alt="cloud">
-                                <div><a href="/assets/files/cv.pdf">Скачать CV</a></div>
+                                <div><a href="#">Скачать CV</a></div>
                             </div>
                             <div>
                                 <a href="#about">
@@ -70,12 +79,20 @@
                             </div>
                         </div>
                         <div class="home-text__social">
-                            <a href=""><img src="/assets/imgs/socials/Github_black.svg" alt="github"></a>
-                            <a href=""><img src="/assets/imgs/socials/Telegram_black.svg" alt="telegram"></a>
-                            <a href=""><img src="/assets/imgs/socials/Mail_ru_black.svg" alt="mailru"></a>
-                            <a href=""><img src="/assets/imgs/socials/WhatsApp_black.svg" alt="whatsapp"></a>
-                            <a href=""><img src="/assets/imgs/socials/Viber_black.svg" alt="viber"></a>
-                            <a href=""><img src="/assets/imgs/socials/VK_black.svg" alt="vk"></a>
+                            <a href="https://github.com/Seth90" target="_blank"><img
+                                    src="/assets/imgs/socials/Github_black.svg" alt="github"></a>
+                            <a href="https://telegram.im/@bySeth37" target="_blank"><img
+                                    src="/assets/imgs/socials/Telegram_black.svg" alt="telegram"></a>
+                            <a href="mailto:seth_90@mail.ru"><img src="/assets/imgs/socials/Mail_ru_black.svg"
+                                    alt="mailru"></a>
+                            <a href="#" data-wa="79203749344"
+                                onclick="window.location.href = 'https:\/\/wa.me\/' + this.dataset.wa;"
+                                target="_blank"><img src="/assets/imgs/socials/WhatsApp_black.svg" alt="whatsapp"></a>
+                            <a href="#" data-vb="79203749344"
+                                onclick="window.location.href = 'viber:\/\/add?number=%2B' + this.dataset.vb;"
+                                target="_blank"><img src="/assets/imgs/socials/Viber_black.svg" alt="viber"></a>
+                            <a href="https://vk.com/by_seth" target="_blank"><img
+                                    src="/assets/imgs/socials/VK_black.svg" alt="vk"></a>
                         </div>
                     </div>
                 </div>
@@ -223,7 +240,7 @@
                                 <div class="timeline-marker"></div>
                                 <div class="timeline-content">
                                     <h3 class="timeline-title">Самообучение</h3>
-                                    <p>Каждый день стараюсь узнать что-то новое :)</p>
+                                    <p>Каждый день стараюсь узнать что-то новое!</p>
                                     <h4><i>Веб-разработка • Тестирование • Весь мир</i></h4>
                                 </div>
                             </li>
@@ -315,13 +332,22 @@
                         <div class=" swiper-wrapper">
                         <div class="swiper-slide projects-main__item">
                             <div class="projects-slider-slide">
-                                <img src="/assets/imgs/projects/3d_site.png" alt="portfolio">
+                                <div class="projects-slider-slide__img">
+                                    <img src="/assets/imgs/projects/3d_site.png" alt="portfolio">
+                                    <div class="imageoverlay">
+                                        <img src="/assets/imgs/tech/html-icon-32.svg" alt="html">
+                                        <img src="/assets/imgs/tech/css-icon-32.svg" alt="css">
+                                        <img src="/assets/imgs/tech/js-icon-32.png" alt="js">
+                                    </div>
+                                </div>
                                 <div class="projects-slider-slide-info">
                                     <div class="projects-slider-slide-info__title">3D сайт</div>
-                                    <div class="projects-slider-slide-info__desc">Сайт, разработанный в учебных целях. С paralax-эффектом и скролингом вглубь.</div>
-                                    <div class="projects-slider-slide-info__icons">Icons</div>
+                                    <div class="projects-slider-slide-info__desc">Сайт, разработанный в учебных целях. С
+                                        paralax-эффектом и скролингом вглубь.</div>
+                                    <div class="projects-slider-slide-info__icons">HTML • CSS • JavaScript</div>
                                     <div class="projects-slider-slide-info__links">
-                                        <div><a href="https://github.com/Seth90/3d_site-learning-project">Исходный код ↗</a></div>
+                                        <div><a href="https://github.com/Seth90/3d_site-learning-project">Исходный код
+                                                ↗</a></div>
                                         <div>
                                             <a href="/projects/3d_site/index.html">
                                                 <div class="preview">
@@ -336,22 +362,24 @@
                         </div>
                         <div class="swiper-slide projects-main__item">
                             <div class="projects-slider-slide">
-                                <img src="/assets/imgs/projects/goldenegg.png" alt="">
+                                <div class="projects-slider-slide__img">
+                                    <img src="/assets/imgs/projects/goldenegg.png" alt="">
+                                    <div class="imageoverlay">
+                                        <img src="/assets/imgs/tech/html-icon-32.svg" alt="html">
+                                        <img src="/assets/imgs/tech/css-icon-32.svg" alt="css">
+                                        <img src="/assets/imgs/tech/js-icon-32.png" alt="js">
+                                        <img src="/assets/imgs/tech/sass-icon-32.png" alt="sass">
+                                    </div>
+                                </div>
                                 <div class="projects-slider-slide-info">
                                     <div class="projects-slider-slide-info__title">Golden Egg</div>
                                     <div class="projects-slider-slide-info__desc">Сайт ресторана</div>
                                     <div class="projects-slider-slide-info__icons">
-                                        <img src="/assets/imgs/socials/Github_black.svg" alt="github">
-                                        <img src="/assets/imgs/socials/Telegram_black.svg"
-                                                alt="telegram">
-                                        <img src="/assets/imgs/socials/Mail_ru_black.svg" alt="mailru">
-                                        <img src="/assets/imgs/socials/WhatsApp_black.svg"
-                                                alt="whatsapp">
-                                        <img src="/assets/imgs/socials/Viber_black.svg" alt="viber">
-                                        <img src="/assets/imgs/socials/VK_black.svg" alt="vk">
+                                        HTML • CSS • SCSS • JavaScript
                                     </div>
                                     <div class="projects-slider-slide-info__links">
-                                        <div><a href="https://github.com/Seth90/golden-egg-learning-project" target="_blank">Исходный код ↗</a></div>
+                                        <div><a href="https://github.com/Seth90/golden-egg-learning-project"
+                                                target="_blank">Исходный код ↗</a></div>
                                         <div><a href="/projects/golden_egg/index.html" target="_blank">
                                                 <div class="preview">
                                                     <img src="/assets/imgs/circle_down.svg" alt="cloud">
@@ -361,25 +389,27 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                         <div class="swiper-slide projects-main__item">
                             <div class="projects-slider-slide">
-                                <img src="/assets/imgs/projects/miami.png" alt="">
+                                <div class="projects-slider-slide__img">
+                                    <img src="/assets/imgs/projects/miami.png" alt="miami">
+                                    <div class="imageoverlay">
+                                        <img src="/assets/imgs/tech/html-icon-32.svg" alt="html">
+                                        <img src="/assets/imgs/tech/css-icon-32.svg" alt="css">
+                                        <img src="/assets/imgs/tech/js-icon-32.png" alt="js">
+                                    </div>
+                                </div>
                                 <div class="projects-slider-slide-info">
                                     <div class="projects-slider-slide-info__title">Miami paralax</div>
-                                    <div class="projects-slider-slide-info__desc">Сайт, разработанный в учебных целях. С paralax-эффектом.</div>
+                                    <div class="projects-slider-slide-info__desc">Сайт, разработанный в учебных целях. С
+                                        paralax-эффектом.</div>
                                     <div class="projects-slider-slide-info__icons">
-                                        <img src="/assets/imgs/socials/Github_black.svg" alt="github">
-                                        <img src="/assets/imgs/socials/Telegram_black.svg"
-                                                alt="telegram">
-                                        <img src="/assets/imgs/socials/Mail_ru_black.svg" alt="mailru">
-                                        <img src="/assets/imgs/socials/WhatsApp_black.svg"
-                                                alt="whatsapp">
-                                        <img src="/assets/imgs/socials/Viber_black.svg" alt="viber">
-                                        <img src="/assets/imgs/socials/VK_black.svg" alt="vk">
+                                        HTML • CSS • JavaScript
                                     </div>
                                     <div class="projects-slider-slide-info__links">
-                                        <div><a href="https://github.com/Seth90/Miami_parallax-learning-project" target="_blank">Исходный код ↗</a></div>
+                                        <div><a href="https://github.com/Seth90/Miami_parallax-learning-project"
+                                                target="_blank">Исходный код ↗</a></div>
                                         <div><a href="/projects/miami_paralax/index.html" target="_blank">
                                                 <div class="preview">
                                                     <img src="/assets/imgs/circle_down.svg" alt="cloud">
@@ -392,22 +422,24 @@
                         </div>
                         <div class="swiper-slide projects-main__item">
                             <div class="projects-slider-slide">
-                                <img src="/assets/imgs/projects/fairy_forest.png" alt="">
+                                <div class="projects-slider-slide__img">
+                                    <img src="/assets/imgs/projects/fairy_forest.png" alt="fairy_forest">
+                                    <div class="imageoverlay">
+                                        <img src="/assets/imgs/tech/html-icon-32.svg" alt="html">
+                                        <img src="/assets/imgs/tech/css-icon-32.svg" alt="css">
+                                        <img src="/assets/imgs/tech/js-icon-32.png" alt="js">
+                                    </div>
+                                </div>
                                 <div class="projects-slider-slide-info">
                                     <div class="projects-slider-slide-info__title">Fairy Forest</div>
-                                    <div class="projects-slider-slide-info__desc">Сайт, разработанный в учебных целях. С paralax-эффектом.</div>
+                                    <div class="projects-slider-slide-info__desc">Сайт, разработанный в учебных целях. С
+                                        paralax-эффектом.</div>
                                     <div class="projects-slider-slide-info__icons">
-                                        <img src="/assets/imgs/socials/Github_black.svg" alt="github">
-                                        <img src="/assets/imgs/socials/Telegram_black.svg"
-                                                alt="telegram">
-                                        <img src="/assets/imgs/socials/Mail_ru_black.svg" alt="mailru">
-                                        <img src="/assets/imgs/socials/WhatsApp_black.svg"
-                                                alt="whatsapp">
-                                        <img src="/assets/imgs/socials/Viber_black.svg" alt="viber">
-                                        <img src="/assets/imgs/socials/VK_black.svg" alt="vk">
+                                        HTML • CSS • JavaScript
                                     </div>
                                     <div class="projects-slider-slide-info__links">
-                                        <div><a href="https://github.com/Seth90/fairy_forest_paralax-learning-project" target="_blank">Исходный код ↗</a></div>
+                                        <div><a href="https://github.com/Seth90/fairy_forest_paralax-learning-project"
+                                                target="_blank">Исходный код ↗</a></div>
                                         <div><a href="/projects/fairy_forest/index.html" target="_blank">
                                                 <div class="preview">
                                                     <img src="/assets/imgs/circle_down.svg" alt="cloud">
@@ -420,22 +452,24 @@
                         </div>
                         <div class="swiper-slide projects-main__item">
                             <div class="projects-slider-slide">
-                                <img src="/assets/imgs/projects/calculator.png" alt="">
+                                <div class="projects-slider-slide__img">
+                                    <img src="/assets/imgs/projects/calculator.png" alt="calc">
+                                    <div class="imageoverlay">
+                                        <img src="/assets/imgs/tech/html-icon-32.svg" alt="html">
+                                        <img src="/assets/imgs/tech/css-icon-32.svg" alt="css">
+                                        <img src="/assets/imgs/tech/js-icon-32.png" alt="js">
+                                    </div>
+                                </div>
                                 <div class="projects-slider-slide-info">
                                     <div class="projects-slider-slide-info__title">JS Калькулятор</div>
-                                    <div class="projects-slider-slide-info__desc">Простенький калькулятор на JS без eval()</div>
+                                    <div class="projects-slider-slide-info__desc">Простенький калькулятор на JS без
+                                        eval()</div>
                                     <div class="projects-slider-slide-info__icons">
-                                        <img src="/assets/imgs/socials/Github_black.svg" alt="github">
-                                        <img src="/assets/imgs/socials/Telegram_black.svg"
-                                                alt="telegram">
-                                        <img src="/assets/imgs/socials/Mail_ru_black.svg" alt="mailru">
-                                        <img src="/assets/imgs/socials/WhatsApp_black.svg"
-                                                alt="whatsapp">
-                                        <img src="/assets/imgs/socials/Viber_black.svg" alt="viber">
-                                        <img src="/assets/imgs/socials/VK_black.svg" alt="vk">
+                                        HTML • CSS • JavaScript
                                     </div>
                                     <div class="projects-slider-slide-info__links">
-                                        <div><a href="https://github.com/Seth90/js_calculator" target="_blank">Исходный код ↗</a></div>
+                                        <div><a href="https://github.com/Seth90/js_calculator" target="_blank">Исходный
+                                                код ↗</a></div>
                                         <div><a href="/projects/js_calculator/index.html" target="_blank">
                                                 <div class="preview">
                                                     <img src="/assets/imgs/circle_down.svg" alt="cloud">
@@ -448,13 +482,22 @@
                         </div>
                         <div class="swiper-slide projects-main__item">
                             <div class="projects-slider-slide">
-                                <img src="/assets/imgs/projects/portfolio.png" alt="portfolio">
+                                <div class="projects-slider-slide__img">
+                                    <img src="/assets/imgs/projects/portfolio.png" alt="portfolio">
+                                    <div class="imageoverlay">
+                                        <img src="/assets/imgs/tech/html-icon-32.svg" alt="html">
+                                        <img src="/assets/imgs/tech/css-icon-32.svg" alt="css">
+                                        <img src="/assets/imgs/tech/js-icon-32.png" alt="js">
+                                        <img src="/assets/imgs/tech/sass-icon-32.png" alt="sass">
+                                    </div>
+                                </div>
                                 <div class="projects-slider-slide-info">
                                     <div class="projects-slider-slide-info__title">Портфолио</div>
                                     <div class="projects-slider-slide-info__desc">Сайт с портфолио</div>
-                                    <div class="projects-slider-slide-info__icons">Icons</div>
+                                    <div class="projects-slider-slide-info__icons">HTML • CSS • SCSS • JavaScript</div>
                                     <div class="projects-slider-slide-info__links">
-                                        <div><a href="https://github.com/Seth90/Seth90.github.io">Исходный код ↗</a></div>
+                                        <div><a href="https://github.com/Seth90/Seth90.github.io">Исходный код ↗</a>
+                                        </div>
                                         <div>
                                             <a href="https://seth90.github.io/">
                                                 <div class="preview">
@@ -467,9 +510,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide projects-main__item">Slide 3</div>
-                        <div class="swiper-slide projects-main__item">Slide 3</div>
-                        <div class="swiper-slide projects-main__item">Slide 3</div>
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>

@@ -11,7 +11,7 @@ $primary-color: #13FF00;
 $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 
 a {
-    color: $primary-color;
+    color: var(--active);
 
     &:hover {
         color: $primary-color-hover;
@@ -87,7 +87,7 @@ a {
 
     &:before {
         background: transparent;
-        border: 3px solid $primary-color;
+        border: 3px solid var(--active);
         border-radius: 100%;
         content: "";
         display: block;
@@ -117,7 +117,7 @@ a {
 }
 
 .timeline-item:not(.period):hover .timeline-marker:before {
-    background: $primary-color;
+    background: var(--active);
     border: 3px solid transparent;
 }
 

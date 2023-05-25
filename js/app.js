@@ -96,3 +96,36 @@ const swiper = new Swiper('.swiper', {
     //   el: '.swiper-scrollbar',
     // },
 });
+
+
+let SetColor = (color) => {
+    console.log('SetColor');
+    switch (color) {
+        case 'green':{
+            document.documentElement.style.setProperty("--active", "#13FF00");
+            document.documentElement.style.setProperty("--swiper-theme-color", "#13FF00");
+            break;
+        }
+        case 'orange':{
+            document.documentElement.style.setProperty("--active", "#ff8800");
+            document.documentElement.style.setProperty("--swiper-theme-color", "#ff8800");
+            break;
+        }
+        case 'red':{
+            document.documentElement.style.setProperty("--active", "#ff4040");
+            document.documentElement.style.setProperty("--swiper-theme-color", "#ff4040");
+            break;
+        }
+        case 'blue':{
+            document.documentElement.style.setProperty("--active", "#0084ff");
+            document.documentElement.style.setProperty("--swiper-theme-color", "#0084ff");
+            break;
+        }
+        case 'purple':{
+            document.documentElement.style.setProperty("--active", "#ff00ff");
+            document.documentElement.style.setProperty("--swiper-theme-color", "#ff00ff");
+            break;
+        }
+
+    }
+}
