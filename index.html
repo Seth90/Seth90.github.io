@@ -16,14 +16,14 @@
 <body>
     <div class="container">
         <header class="header">
-                <div class="btn-container">
-                    <i class="fa fa-sun-o" aria-hidden="true"></i>
-                      <label class="switch btn-color-mode-switch">
-                            <input type="checkbox" name="color_mode" id="color_mode" value="1" checked>
-                            <label for="color_mode" data-on="Dark" data-off="Light" class="btn-color-mode-switch-inner"></label>
-                        </label>
-                      <i class="fa fa-moon-o" aria-hidden="true"></i>
-                  </div>
+            <div class="btn-container">
+                <i class="fa fa-sun-o" aria-hidden="true"></i>
+                <label class="switch btn-color-mode-switch">
+                    <input type="checkbox" name="color_mode" id="color_mode" value="1" checked>
+                    <label for="color_mode" data-on="Dark" data-off="Light" class="btn-color-mode-switch-inner"></label>
+                </label>
+                <i class="fa fa-moon-o" aria-hidden="true"></i>
+            </div>
             <div class="header-color">
                 <div class="header-color__color green" onclick="SetColor('green')"></div>
                 <div class="header-color__color red" onclick="SetColor('red')"></div>
@@ -32,89 +32,94 @@
                 <div class="header-color__color purple" onclick="SetColor('purple')"></div>
             </div>
         </header>
-        <section class="home">
-            <div class="top-menu">
-                <div class="home-mobile-menu">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-                <div class="mobile hidden">
-                    <ul class="mobile-menu">
-                        <li class="top-menu__item"><a href="#about">Обо мне</a></li>
-                        <li class="top-menu__item"><a href="#study">Образование</a></li>
-                        <li class="top-menu__item"><a href="#experience">Опыт работы</a></li>
-                        <li class="top-menu__item"><a href="#projects">Проекты</a></li>
-                        <li class="top-menu__item"><a href="#contacts">Контакты</a></li>
-                    </ul>
-                </div>
-                <nav>
-                    <ul class="top-menu__list">
-                        <li class="top-menu__item"><a href="#about">Обо мне</a></li>
-                        <li class="top-menu__item"><a href="#study">Образование</a></li>
-                        <li class="top-menu__item"><a href="#experience">Опыт работы</a></li>
-                        <li class="top-menu__item"><a href="#projects">Проекты</a></li>
-                        <li class="top-menu__item"><a href="#contacts">Контакты</a></li>
-                    </ul>
-                </nav>
+        <section class="">
+            <div class="mobile hidden">
+                <ul class="mobile-menu">
+                    <li class="top-menu__item"><a href="#about">Обо мне</a></li>
+                    <li class="top-menu__item"><a href="#study">Образование</a></li>
+                    <li class="top-menu__item"><a href="#experience">Опыт работы</a></li>
+                    <li class="top-menu__item"><a href="#projects">Проекты</a></li>
+                    <li class="top-menu__item"><a href="#contacts">Контакты</a></li>
+                </ul>
             </div>
-            <div class="home-circle">
-                <div class="home-circle-one"></div>
-                <div class="home-circle-two"></div>
-            </div>
-            <!-- <div class="home-poster">
+            <div class="home">
+                <div class="top-menu">
+                    <div class="home-mobile-menu">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+
+                    <nav>
+                        <ul class="top-menu__list">
+                            <li class="top-menu__item"><a href="#about">Обо мне</a></li>
+                            <li class="top-menu__item"><a href="#study">Образование</a></li>
+                            <li class="top-menu__item"><a href="#experience">Опыт работы</a></li>
+                            <li class="top-menu__item"><a href="#projects">Проекты</a></li>
+                            <li class="top-menu__item"><a href="#contacts">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="home-circle">
+                    <div class="home-circle-one"></div>
+                    <div class="home-circle-two"></div>
+                </div>
+                <!-- <div class="home-poster">
                 <img src="/assets/imgs/startup-img-1.png" alt="">
             </div> -->
-            <div class="home-trapezoid">
-                <div class="home-text">
-                    <div class="home-text-container">
-                        <!-- <div class="home-text__poster">
+                <div class="home-trapezoid">
+                    <div class="home-text">
+                        <div class="home-text-container">
+                            <!-- <div class="home-text__poster">
                             <img src="/assets/imgs/startup-img-1.png" alt="">
                         </div> -->
-                        <div class="home-text__title">
-                            АНДРЕЙ ГОРБАЧЕВ
-                        </div>
-                        <div class="home-text__title2">
-                            Front-end Developer & QA Engineer
-                        </div>
-                        <div class="home-text__desc">
-                            Front-end разработчик, занимающийся созданием web- и мобильных приложений. Опыта не много,
-                            но постоянное саморазвитие помогает ежедневно получать новые знания и навыки.
-                        </div>
-                        <div class="home-text-buttons">
-                            <div class="home-text-buttons__cv">
-                                <img src="/assets/imgs/cloud_down.svg" alt="cloud">
-                                <div><a href="#">Скачать CV</a></div>
+                            <div class="home-text__title">
+                                АНДРЕЙ ГОРБАЧЕВ
                             </div>
-                            <div>
-                                <a href="#about">
-                                    <div class="home-text-buttons__portfolio">
-                                        <img src="/assets/imgs/circle_down.svg" alt="cloud">
-                                        <div>Портфолио</div>
-                                    </div>
-                                </a>
+                            <div class="home-text__title2">
+                                Front-end Developer & QA Engineer
                             </div>
-                        </div>
-                        <div class="home-text__social">
-                            <a href="https://github.com/Seth90" target="_blank"><img
-                                    src="/assets/imgs/socials/Github_black.svg" alt="github"></a>
-                            <a href="https://telegram.im/@bySeth37" target="_blank"><img
-                                    src="/assets/imgs/socials/Telegram_black.svg" alt="telegram"></a>
-                            <a href="mailto:seth_90@mail.ru"><img src="/assets/imgs/socials/Mail_ru_black.svg"
-                                    alt="mailru"></a>
-                            <a href="#" data-wa="79203749344"
-                                onclick="window.location.href = 'https:\/\/wa.me\/' + this.dataset.wa;"
-                                target="_blank"><img src="/assets/imgs/socials/WhatsApp_black.svg" alt="whatsapp"></a>
-                            <a href="#" data-vb="79203749344"
-                                onclick="window.location.href = 'viber:\/\/add?number=%2B' + this.dataset.vb;"
-                                target="_blank"><img src="/assets/imgs/socials/Viber_black.svg" alt="viber"></a>
-                            <a href="https://vk.com/by_seth" target="_blank"><img
-                                    src="/assets/imgs/socials/VK_black.svg" alt="vk"></a>
+                            <div class="home-text__desc">
+                                Front-end разработчик, занимающийся созданием web- и мобильных приложений. Опыта не
+                                много,
+                                но постоянное саморазвитие помогает ежедневно получать новые знания и навыки.
+                            </div>
+                            <div class="home-text-buttons">
+                                <div class="home-text-buttons__cv">
+                                    <img src="/assets/imgs/cloud_down.svg" alt="cloud">
+                                    <div><a href="#">Скачать CV</a></div>
+                                </div>
+                                <div>
+                                    <a href="#about">
+                                        <div class="home-text-buttons__portfolio">
+                                            <img src="/assets/imgs/circle_down.svg" alt="cloud">
+                                            <div>Портфолио</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="home-text__social">
+                                <a href="https://github.com/Seth90" target="_blank"><img
+                                        src="/assets/imgs/socials/Github_black.svg" alt="github"></a>
+                                <a href="https://telegram.im/@bySeth37" target="_blank"><img
+                                        src="/assets/imgs/socials/Telegram_black.svg" alt="telegram"></a>
+                                <a href="mailto:seth_90@mail.ru"><img src="/assets/imgs/socials/Mail_ru_black.svg"
+                                        alt="mailru"></a>
+                                <a href="#" data-wa="79203749344"
+                                    onclick="window.location.href = 'https:\/\/wa.me\/' + this.dataset.wa;"
+                                    target="_blank"><img src="/assets/imgs/socials/WhatsApp_black.svg"
+                                        alt="whatsapp"></a>
+                                <a href="#" data-vb="79203749344"
+                                    onclick="window.location.href = 'viber:\/\/add?number=%2B' + this.dataset.vb;"
+                                    target="_blank"><img src="/assets/imgs/socials/Viber_black.svg" alt="viber"></a>
+                                <a href="https://vk.com/by_seth" target="_blank"><img
+                                        src="/assets/imgs/socials/VK_black.svg" alt="vk"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="home-bottom"></div>
             </div>
-            <div class="home-bottom"></div>
         </section>
 
         <section class="about flex-container" id="about">
@@ -127,7 +132,9 @@
 
                 <div class="about-text">
                     <p>
-                        Меня зовут <span class="active-font-color">Андрей Горбачев</span>, мне <span class="active-font-color" id="age">33</span> года. Я живу в городе Иваново, Россия. Есть высшее образование (ИГЭУ),женат, есть ребенок. В настоящее время работаю QA инженером.
+                        Меня зовут <span class="active-font-color">Андрей Горбачев</span>, мне <span
+                            class="active-font-color" id="age">33</span> года. Я живу в городе Иваново, Россия. Есть
+                        высшее образование (ИГЭУ),женат, есть ребенок. В настоящее время работаю QA инженером.
                     </p>
                     <p>&nbsp;</p>
                     <p>В процессе тестирования web-приложений заинтересовался
