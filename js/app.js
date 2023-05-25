@@ -104,26 +104,31 @@ let SetColor = (color) => {
         case 'green':{
             document.documentElement.style.setProperty("--active", "#13FF00");
             document.documentElement.style.setProperty("--swiper-theme-color", "#13FF00");
+            document.documentElement.style.setProperty("--filter", "invert(55%) sepia(94%) saturate(300%) hue-rotate(68deg) brightness(140%) contrast(150%)");
             break;
         }
         case 'orange':{
             document.documentElement.style.setProperty("--active", "#ff8800");
             document.documentElement.style.setProperty("--swiper-theme-color", "#ff8800");
+            document.documentElement.style.setProperty("--filter", "invert(61%) sepia(27%) saturate(6218%) hue-rotate(0deg) brightness(102%) contrast(102%)");
             break;
         }
         case 'red':{
             document.documentElement.style.setProperty("--active", "#ff4040");
             document.documentElement.style.setProperty("--swiper-theme-color", "#ff4040");
+            document.documentElement.style.setProperty("--filter", "invert(43%) sepia(91%) saturate(3300%) hue-rotate(335deg) brightness(100%) contrast(110%)");
             break;
         }
         case 'blue':{
             document.documentElement.style.setProperty("--active", "#0084ff");
             document.documentElement.style.setProperty("--swiper-theme-color", "#0084ff");
+            document.documentElement.style.setProperty("--filter", "invert(32%) sepia(99%) saturate(2683%) hue-rotate(196deg) brightness(105%) contrast(104%)");
             break;
         }
         case 'purple':{
             document.documentElement.style.setProperty("--active", "#ff00ff");
             document.documentElement.style.setProperty("--swiper-theme-color", "#ff00ff");
+            document.documentElement.style.setProperty("--filter", "invert(22%) sepia(99%) saturate(6190%) hue-rotate(299deg) brightness(123%) contrast(118%)");
             break;
         }
 
