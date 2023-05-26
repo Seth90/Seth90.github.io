@@ -15,7 +15,10 @@
 
 <body>
     <div class="container">
-        <header class="header">
+        <div class="upbtn">
+            <a href="#header"><img src="/assets/imgs/circle_down.svg" alt="cloud"></a>
+        </div>
+        <header class="header" id="header">
             <div class="btn-container">
                 <i class="fa fa-sun-o" aria-hidden="true"></i>
                 <label class="switch btn-color-mode-switch">
@@ -342,13 +345,45 @@
         </section>
 
         <section class="projects" id="projects">
-            <div class="about-shadow-text">PROJECTS</div>
+            <div class="about-shadow-text edu-shadow">PROJECTS</div>
             <div class="about-shadow-svg"><img src="/assets/imgs/Group 34.svg"></div>
             <div class="flex-container">
                 <div class="section-header">ПРОЕКТЫ</div>
                 <div class="projects-main">
                     <div class="swiper projects-slider" ">
                         <div class=" swiper-wrapper">
+                            <div class="swiper-slide projects-main__item">
+                                <div class="projects-slider-slide">
+                                    <div class="projects-slider-slide__img">
+                                        <img src="/assets/imgs/projects/avion.png" alt="portfolio">
+                                        <div class="imageoverlay">
+                                            <img src="/assets/imgs/tech/html-icon-32.svg" alt="html">
+                                            <img src="/assets/imgs/tech/css-icon-32.svg" alt="css">
+                                            <img src="/assets/imgs/tech/vue-icon-32.svg" alt="vue">
+                                            <img src="/assets/imgs/tech/js-icon-32.png" alt="js">
+                                            <img src="/assets/imgs/tech/vite-icon-32.svg" alt="vite">
+                                            <img src="/assets/imgs/tech/sass-icon-32.png" alt="sass">
+                                        </div>
+                                    </div>
+                                    <div class="projects-slider-slide-info">
+                                        <div class="projects-slider-slide-info__title">Avion</div>
+                                        <div class="projects-slider-slide-info__desc">Сайт, разработанный в учебных целях на Vite + Vue3</div>
+                                        <div class="projects-slider-slide-info__icons">HTML • CSS • Vue3 • JavaScript • SCSS • Vite</div>
+                                        <div class="projects-slider-slide-info__links">
+                                            <div><a href="https://github.com/Seth90/3d_site-learning-project">Исходный код
+                                                    ↗</a></div>
+                                            <div>
+                                                <a href="/projects/3d_site/index.html">
+                                                    <div class="preview">
+                                                        <img src="/assets/imgs/circle_down.svg" alt="cloud">
+                                                        <div>Открыть</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         <div class="swiper-slide projects-main__item">
                             <div class="projects-slider-slide">
                                 <div class="projects-slider-slide__img">
@@ -481,7 +516,7 @@
                                 </div>
                                 <div class="projects-slider-slide-info">
                                     <div class="projects-slider-slide-info__title">JS Калькулятор</div>
-                                    <div class="projects-slider-slide-info__desc">Простенький калькулятор на JS без
+                                    <div class="projects-slider-slide-info__desc">Простой калькулятор на JS без
                                         eval()</div>
                                     <div class="projects-slider-slide-info__icons">
                                         HTML • CSS • JavaScript
@@ -542,7 +577,26 @@
                 </div>
             </div>
     </div>
-    </section>
+        </section>
+
+        <section class="contacts" id="contacts">
+            <div class="about-shadow-text">CONTACTS</div>
+            <div class="about-shadow-svg"><img src="/assets/imgs/Group 34.svg"></div>
+            <div class="flex-container">
+                <div class="section-header">Контакты</div>
+                <div class="contacts-main">
+                    <div class="contacts-main-email">Электронная почта: <a href="mailto: seth90@mail.ru">seth_90<span class="active-font-color">@</span>mail.ru</a></div>
+                    <div class="contacts-main-phone">Телефон: <a href="tel:+79203749344">+7-920-374-93-44</a></div>
+                    <div class="contacts-main-github">GitHub: <a href="https://github.com/Seth90">https://github.com/Seth90</a></div>
+                    <div class="contacts-main-telegram"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <div>bySeth, 2023</div>
+        </footer>
 
     </div>
 </body>

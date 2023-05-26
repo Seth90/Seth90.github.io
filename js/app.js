@@ -1,3 +1,13 @@
+let m_menu = document.querySelector('.home-mobile-menu');
+let mobile = document.querySelector('.mobile');
+let home = document.querySelector('.home');
+let upbtn = document.querySelector('.upbtn');
+let header = document.querySelector('#header');
+var element = document.querySelector('#age');
+var done = false;
+let scrolled = false;
+
+// Smooth scroll to ID-tag
 const anchors = document.querySelectorAll('a[href*="#"]')
 for (let anchor of anchors) {
     anchor.addEventListener('click', function (e) {
@@ -10,36 +20,27 @@ for (let anchor of anchors) {
 
     })
 }
+//-----------------------------------------
 
-let m_menu = document.querySelector('.home-mobile-menu');
-let mobile = document.querySelector('.mobile');
-let home = document.querySelector('.home');
-
+// Mobile menu hide/open
 home.addEventListener('click', function (e) {
     //e.stopPropagation();
     if (!mobile.classList.contains('hidden')) {
         mobile.classList.add('hidden');
     }
 })
-
 mobile.addEventListener('click', (e) => {
     //e.stopPropagation();
     mobile.classList.toggle('hidden');
 })
-
 m_menu.addEventListener('click', function (e) {
     e.stopPropagation();
     //console.log('m_menu');
     mobile.classList.toggle('hidden');
 })
+//-----------------------------------------
 
-
-// let ShowMobileMenu = () => {
-//     console.log('m menu');
-//     let m_menu = document.querySelector('.mobile');
-//     m_menu.classList.toggle('hidden');
-// }
-
+// Age animation
 let AgeCounter = (el) => {
     //console.log('agecounter');
     let counts = setInterval(updated, 35);
@@ -51,10 +52,21 @@ let AgeCounter = (el) => {
         }
     }
 }
+//-----------------------------------------
 
-var element = document.querySelector('#age');
-var done = false;
-var Visible = function (target) {
+// To-up-button show/hide
+let ScrollUp = () => {
+    if (!CheckVisible(home)) {
+        upbtn.style.setProperty("display", "block");
+    }
+    else if (CheckVisible(header)) {
+        upbtn.style.setProperty("display", "none");
+    }
+}
+//-----------------------------------------
+
+// Checking visibility of target
+let CheckVisible = (target) => {
     var targetPosition = {
         top: window.pageYOffset + target.getBoundingClientRect().top,
         bottom: window.pageYOffset + target.getBoundingClientRect().bottom
@@ -66,7 +78,17 @@ var Visible = function (target) {
     //console.log(targetPosition.bottom, windowPosition.top)
     if (targetPosition.bottom > windowPosition.top &&
         targetPosition.top < windowPosition.bottom) {
-        ///console.log('visible2');
+            return true;
+    }
+    else {
+        return false
+     }
+}
+//-----------------------------------------
+
+// For age animation
+var Visible = function (target) {
+    if (CheckVisible(target)) {
         if (!done) {
             AgeCounter(element); done = true;
         }
@@ -75,13 +97,16 @@ var Visible = function (target) {
         done = false;
     };
 };
+//-----------------------------------------
 
 window.addEventListener('scroll', function () {
     Visible(element);
+    ScrollUp();
 });
 
 Visible(element);
 
+// Swiper
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
@@ -126,7 +151,7 @@ const swiper = new Swiper('.swiper', {
     // },
 });
 
-
+//Change main color
 let SetColor = (color) => {
     console.log('SetColor');
     switch (color) {

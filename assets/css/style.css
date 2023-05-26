@@ -887,6 +887,7 @@ a:hover {
 }
 .projects-slider-slide-info__title {
   font-size: 1.5em;
+  text-align: center;
 }
 .projects-slider-slide-info__desc {
   font-size: 1.2em;
@@ -941,6 +942,34 @@ a:hover {
 .projects-main__item {
   width: 33%;
   display: flex;
+}
+
+.contacts {
+  position: relative;
+  min-height: 50vh;
+  padding: 30px;
+}
+.contacts-main {
+  z-index: 1;
+  font-size: 20px;
+  margin-top: 40px;
+}
+.contacts-main > * {
+  margin-bottom: 10px;
+}
+.contacts-main a {
+  text-decoration: none;
+}
+.contacts-main a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  min-height: 50px;
+  color: var(--main-font-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 :root {
@@ -1001,4 +1030,18 @@ body {
   border-radius: 50px;
   margin: auto;
   margin-top: 5px;
+}
+
+.upbtn {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  bottom: 20px;
+  right: 20px;
+}
+.upbtn img {
+  width: 50px;
+  height: 50px;
+  transform: rotate(180deg);
+  filter: invert(100%);
 }/*# sourceMappingURL=style.css.map */
