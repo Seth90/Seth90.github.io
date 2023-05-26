@@ -12,6 +12,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
+    --shadow-text-color-add: #484848;
+    --background-add: #292929;
+    --backgroud-main: #000;
     --main-font-color: white;
     --darken-font-color: #dedede;
     --invert-font-color: black;
@@ -59,10 +62,12 @@ body {
 .section-header {
     font-weight: 700;
     color: var(--main-font-color);
-    font-size: calc((1vh + 1vw) * 2.0);
     line-height: 55px;
     //margin-bottom: 50px;
     z-index: 2;
+    h1 {
+        font-size: calc((1vh + 1vw) * 2.0);
+    }
 
     &::after {
         @include line;

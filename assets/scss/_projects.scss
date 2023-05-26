@@ -58,7 +58,7 @@
     min-height: 100vh;
     position: relative;
     padding: 30px;
-    background: #292929;
+    background: var(--background-add);
 
     &-slider {
         max-width: 80vw;
@@ -102,7 +102,7 @@
                 justify-content: space-between;
                 width: 100%;
                 padding: 20px;
-                background: #000;
+                background: var(--backgroud-main);
                 gap: 20px;
 
                 border-radius: 0 0 10px 10px;

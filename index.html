@@ -27,6 +27,7 @@
                 </label>
                 <i class="fa fa-moon-o" aria-hidden="true"></i>
             </div>
+            <div class="header-day-night hidden"></div>
             <div class="header-color">
                 <div class="header-color__color green" onclick="SetColor('green')"></div>
                 <div class="header-color__color red" onclick="SetColor('red')"></div>
@@ -35,6 +36,7 @@
                 <div class="header-color__color purple" onclick="SetColor('purple')"></div>
             </div>
         </header>
+        <!-- Home -->
         <section class="">
             <div class="mobile hidden">
                 <ul class="mobile-menu">
@@ -67,15 +69,10 @@
                     <div class="home-circle-one"></div>
                     <div class="home-circle-two"></div>
                 </div>
-                <!-- <div class="home-poster">
-                <img src="/assets/imgs/startup-img-1.png" alt="">
-            </div> -->
                 <div class="home-trapezoid">
                     <div class="home-text">
                         <div class="home-text-container">
-                            <!-- <div class="home-text__poster">
-                            <img src="/assets/imgs/startup-img-1.png" alt="">
-                        </div> -->
+
                             <div class="home-text__title">
                                 АНДРЕЙ ГОРБАЧЕВ
                             </div>
@@ -124,13 +121,13 @@
                 <div class="home-bottom"></div>
             </div>
         </section>
-
+        <!-- About -->
         <section class="about flex-container" id="about">
             <div class="about-shadow-text">ABOUT</div>
             <div class="about-shadow-svg"><img src="/assets/imgs/Group 34.svg"></div>
             <div class="flex-container about-text-container">
                 <div class="about-title section-header">
-                    ОБО МНЕ
+                    <h1>ОБО МНЕ</h1>
                 </div>
 
                 <div class="about-text">
@@ -150,12 +147,14 @@
                 </div>
             </div>
         </section>
-
+        <!-- Study -->
         <section class="study" id="study">
             <div class="about-shadow-text edu-shadow">EDUCATION</div>
             <div class="about-shadow-svg"><img src="/assets/imgs/Group 34.svg"></div>
             <div class="flex-container">
-                <div class="section-header">ОБРАЗОВАНИЕ</div>
+                <div class="section-header">
+                    <h1>ОБРАЗОВАНИЕ</h1>
+                </div>
             </div>
             <div class="container-fluid">
                 <div class="row example-centered">
@@ -271,12 +270,14 @@
                 </div>
             </div>
         </section>
-
+        <!-- Experience -->
         <section class="experience" id="experience">
             <div class="about-shadow-text">EXPERIENCE</div>
             <div class="about-shadow-svg"><img src="/assets/imgs/Group 34.svg"></div>
             <div class="flex-container">
-                <div class="section-header">ОПЫТ РАБОТЫ</div>
+                <div class="section-header">
+                    <h1>ОПЫТ РАБОТЫ</h1>
+                </div>
                 <div class="container-fluid">
                     <div class="row example-centered">
                         <div class="experience-main">
@@ -343,47 +344,52 @@
                 </div>
             </div>
         </section>
-
+        <!-- Projects -->
         <section class="projects" id="projects">
             <div class="about-shadow-text edu-shadow">PROJECTS</div>
             <div class="about-shadow-svg"><img src="/assets/imgs/Group 34.svg"></div>
             <div class="flex-container">
-                <div class="section-header">ПРОЕКТЫ</div>
+                <div class="section-header">
+                    <h1>ПРОЕКТЫ</h1>
+                </div>
                 <div class="projects-main">
                     <div class="swiper projects-slider" ">
                         <div class=" swiper-wrapper">
-                            <div class="swiper-slide projects-main__item">
-                                <div class="projects-slider-slide">
-                                    <div class="projects-slider-slide__img">
-                                        <img src="/assets/imgs/projects/avion.png" alt="portfolio">
-                                        <div class="imageoverlay">
-                                            <img src="/assets/imgs/tech/html-icon-32.svg" alt="html">
-                                            <img src="/assets/imgs/tech/css-icon-32.svg" alt="css">
-                                            <img src="/assets/imgs/tech/vue-icon-32.svg" alt="vue">
-                                            <img src="/assets/imgs/tech/js-icon-32.png" alt="js">
-                                            <img src="/assets/imgs/tech/vite-icon-32.svg" alt="vite">
-                                            <img src="/assets/imgs/tech/sass-icon-32.png" alt="sass">
-                                        </div>
+                        <div class="swiper-slide projects-main__item">
+                            <div class="projects-slider-slide">
+                                <div class="projects-slider-slide__img">
+                                    <img src="/assets/imgs/projects/avion.png" alt="portfolio">
+                                    <div class="imageoverlay">
+                                        <img src="/assets/imgs/tech/html-icon-32.svg" alt="html">
+                                        <img src="/assets/imgs/tech/css-icon-32.svg" alt="css">
+                                        <img src="/assets/imgs/tech/vue-icon-32.svg" alt="vue">
+                                        <img src="/assets/imgs/tech/js-icon-32.png" alt="js">
+                                        <img src="/assets/imgs/tech/vite-icon-32.svg" alt="vite">
+                                        <img src="/assets/imgs/tech/sass-icon-32.png" alt="sass">
                                     </div>
-                                    <div class="projects-slider-slide-info">
-                                        <div class="projects-slider-slide-info__title">Avion</div>
-                                        <div class="projects-slider-slide-info__desc">Сайт, разработанный в учебных целях на Vite + Vue3</div>
-                                        <div class="projects-slider-slide-info__icons">HTML • CSS • Vue3 • JavaScript • SCSS • Vite</div>
-                                        <div class="projects-slider-slide-info__links">
-                                            <div><a href="https://github.com/Seth90/3d_site-learning-project">Исходный код
-                                                    ↗</a></div>
-                                            <div>
-                                                <a href="/projects/3d_site/index.html">
-                                                    <div class="preview">
-                                                        <img src="/assets/imgs/circle_down.svg" alt="cloud">
-                                                        <div>Открыть</div>
-                                                    </div>
-                                                </a>
-                                            </div>
+                                </div>
+                                <div class="projects-slider-slide-info">
+                                    <div class="projects-slider-slide-info__title">Avion</div>
+                                    <div class="projects-slider-slide-info__desc">Сайт, разработанный в учебных целях на
+                                        Vite + Vue3</div>
+                                    <div class="projects-slider-slide-info__icons">HTML • CSS • Vue3 • JavaScript • SCSS
+                                        •
+                                        Vite</div>
+                                    <div class="projects-slider-slide-info__links">
+                                        <div><a href="https://github.com/Seth90/3d_site-learning-project">Исходный код
+                                                ↗</a></div>
+                                        <div>
+                                            <a href="/projects/3d_site/index.html">
+                                                <div class="preview">
+                                                    <img src="/assets/imgs/circle_down.svg" alt="cloud">
+                                                    <div>Открыть</div>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
                         <div class="swiper-slide projects-main__item">
                             <div class="projects-slider-slide">
                                 <div class="projects-slider-slide__img">
@@ -576,18 +582,21 @@
                     <!-- <div class="swiper-scrollbar"></div> -->
                 </div>
             </div>
-    </div>
         </section>
-
+        <!-- Contacts -->
         <section class="contacts" id="contacts">
             <div class="about-shadow-text">CONTACTS</div>
             <div class="about-shadow-svg"><img src="/assets/imgs/Group 34.svg"></div>
             <div class="flex-container">
-                <div class="section-header">Контакты</div>
+                <div class="section-header">
+                    <h1>КОНТАКТЫ</h1>
+                </div>
                 <div class="contacts-main">
-                    <div class="contacts-main-email">Электронная почта: <a href="mailto: seth90@mail.ru">seth_90<span class="active-font-color">@</span>mail.ru</a></div>
+                    <div class="contacts-main-email">Электронная почта: <a href="mailto: seth90@mail.ru">seth_90<span
+                                class="active-font-color">@</span>mail.ru</a></div>
                     <div class="contacts-main-phone">Телефон: <a href="tel:+79203749344">+7-920-374-93-44</a></div>
-                    <div class="contacts-main-github">GitHub: <a href="https://github.com/Seth90">https://github.com/Seth90</a></div>
+                    <div class="contacts-main-github">GitHub: <a
+                            href="https://github.com/Seth90">https://github.com/Seth90</a></div>
                     <div class="contacts-main-telegram"></div>
                 </div>
             </div>

@@ -2,6 +2,7 @@
     position: relative;
     min-height: 50vh;
     padding: 30px;
+    background: var(--backgroud-main);
 
     &-main {
         z-index: 3;
@@ -16,6 +17,5 @@
                 text-decoration: underline;
             }
         }
-
     }
 }

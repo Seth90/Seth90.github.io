@@ -9,6 +9,12 @@
     background: #cfcfcf;
     min-height: 40px;
     z-index: 10;
+    &-day-night {
+        background-color: black;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
 
     &-color {
         display: flex;

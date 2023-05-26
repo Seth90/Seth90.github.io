@@ -4,7 +4,9 @@ let home = document.querySelector('.home');
 let upbtn = document.querySelector('.upbtn');
 let header = document.querySelector('#header');
 var element = document.querySelector('#age');
+let dn = document.querySelector('.header-day-night');
 var done = false;
+let isNight = false;
 let scrolled = false;
 
 // Smooth scroll to ID-tag
@@ -150,6 +152,31 @@ const swiper = new Swiper('.swiper', {
     //   el: '.swiper-scrollbar',
     // },
 });
+
+//Dark/light switch
+let LightSwitch = () => {
+    console.log('ls');
+    if (!isNight) {
+        document.documentElement.style.setProperty("-invert-font-color", "#ffffff");
+        document.documentElement.style.setProperty("--main-font-color", "#292929");
+        document.documentElement.style.setProperty("--backgroud-main", "#ffffff");
+        document.documentElement.style.setProperty("--background-add", "#dedede");
+        document.documentElement.style.setProperty("--shadow-text-color-add", "#484848");
+        isNight = true;
+    } else {
+        document.documentElement.style.setProperty("-invert-font-color", "#000");
+        document.documentElement.style.setProperty("--main-font-color", "#ffffff");
+        document.documentElement.style.setProperty("--backgroud-main", "#000");
+        document.documentElement.style.setProperty("--background-add", "#292929");
+        document.documentElement.style.setProperty("--shadow-text-color-add", "#484848");
+        isNight = false;
+    }
+}
+
+dn.addEventListener('click', function(e) {
+    LightSwitch();
+})
+//-----------------------------------------
 
 //Change main color
 let SetColor = (color) => {

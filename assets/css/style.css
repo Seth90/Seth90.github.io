@@ -12,6 +12,12 @@
   min-height: 40px;
   z-index: 10;
 }
+.header-day-night {
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
 .header-color {
   display: flex;
   justify-content: space-around;
@@ -528,7 +534,7 @@ p.by a {
 .about {
   min-height: 100vh;
   position: relative;
-  background: #000;
+  background: var(--backgroud-main);
   color: var(--main-font-color);
   padding-top: 5vh;
   padding-bottom: 30vh;
@@ -563,13 +569,13 @@ p.by a {
 }
 
 .study {
-  background: #292929;
+  background: var(--background-add);
   padding: 30px;
   position: relative;
 }
 
 .edu-shadow {
-  color: #484848;
+  color: var(--shadow-text-color-add);
 }
 
 a {
@@ -777,6 +783,7 @@ a:hover {
   min-height: 100vh;
   position: relative;
   padding: 30px;
+  background: var(--backgroud-main);
 }
 .experience-main {
   margin-top: 40px;
@@ -842,7 +849,7 @@ a:hover {
   min-height: 100vh;
   position: relative;
   padding: 30px;
-  background: #292929;
+  background: var(--background-add);
 }
 .projects-slider {
   max-width: 80vw;
@@ -881,7 +888,7 @@ a:hover {
   justify-content: space-between;
   width: 100%;
   padding: 20px;
-  background: #000;
+  background: var(--backgroud-main);
   gap: 20px;
   border-radius: 0 0 10px 10px;
 }
@@ -948,6 +955,7 @@ a:hover {
   position: relative;
   min-height: 50vh;
   padding: 30px;
+  background: var(--backgroud-main);
 }
 .contacts-main {
   z-index: 3;
@@ -966,13 +974,18 @@ a:hover {
 
 .footer {
   min-height: 50px;
+  width: 100%;
   color: var(--main-font-color);
   display: flex;
   justify-content: center;
   align-items: center;
+  background: var(--background-add);
 }
 
 :root {
+  --shadow-text-color-add: #484848;
+  --background-add: #292929;
+  --backgroud-main: #000;
   --main-font-color: white;
   --darken-font-color: #dedede;
   --invert-font-color: black;
@@ -1017,9 +1030,11 @@ body {
 .section-header {
   font-weight: 700;
   color: var(--main-font-color);
-  font-size: calc((1vh + 1vw) * 2);
   line-height: 55px;
   z-index: 2;
+}
+.section-header h1 {
+  font-size: calc((1vh + 1vw) * 2);
 }
 .section-header::after {
   content: "";

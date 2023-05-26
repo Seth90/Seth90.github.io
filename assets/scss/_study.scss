@@ -1,10 +1,10 @@
 .study {
-    background: #292929;
+    background: var(--background-add);
     padding: 30px;
     position: relative;
 }
 .edu-shadow {
-    color: #484848;
+    color: var(--shadow-text-color-add);
 }
 
 $primary-color: #13FF00;
